@@ -1,4 +1,10 @@
-const navigationStrings={}
+const navigationStrings={
+    Home:'home',
+    countersaad:'counter'
+
+
+
+}
 
 
 

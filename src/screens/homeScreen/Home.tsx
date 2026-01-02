@@ -1,13 +1,29 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import styles from './styles'
+import { View, Text,Image } from 'react-native';
+import React from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import styles from './styles';
+import { navigationStrings } from '../../utils';
+import { en } from '../../translations';
 
-const Home = () => {
+const Home = ({ navigation }: any) => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  )
-}
+    <SafeAreaView style={styles.container}>
+      <View>
+        <Text>{en.home.header}</Text>
+         
 
-export default Home
+
+        
+      </View>
+
+      <Text
+        onPress={() => navigation.navigate(navigationStrings.countersaad)}
+
+        >
+          Go to Counter
+        </Text>
+    </SafeAreaView>
+  );
+};
+
+export default Home;
