@@ -1,27 +1,73 @@
-import { View, Text,Image } from 'react-native';
+import { View, Text,Image,FlatList, TouchableOpacity} from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './styles';
 import { navigationStrings } from '../../utils';
 import { en } from '../../translations';
+import { images } from '../../themes';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import colors from "../../themes/colors"; 
 
 const Home = ({ navigation }: any) => {
   return (
     <SafeAreaView style={styles.container}>
-      <View>
-        <Text>{en.home.header}</Text>
+      <View style={styles.header}>
+        <View style={styles.textcontainer}>
+           <Text style={styles.texthead}>{en.home.header}</Text>
+        </View>
+       
+       <View style={styles.imagecontainer}>
+       
+
+        <Image
+
+
+         source={images.face}/>
+         <Text style={styles.text}>0</Text>
+
+      
+         
+       </View>
+        
          
 
 
         
       </View>
 
-      <Text
-        onPress={() => navigation.navigate(navigationStrings.countersaad)}
+      <View style={styles.mainimage}>
+        <Image
+         source={images.patient}
+         />
 
-        >
-          Go to Counter
-        </Text>
+      </View>
+
+      
+
+   <View>
+  <TouchableOpacity
+    onPress={() => navigation.navigate(navigationStrings.countersaad)}
+    style={styles.buttonContainer}
+  >
+    <Text style={styles.buttonTextis}>
+      {en.home.record}
+    </Text>
+  </TouchableOpacity>
+</View>
+
+<View style={styles.pastRecordContainer}>
+  <Text style={styles.pastRecordTitle}>{en.home.past}</Text>
+
+  {/* <FlatList
+    data={pastRecords}
+    keyExtractor={(item) => item.id}
+    renderItem={renderRecordItem}
+    showsVerticalScrollIndicator={false}
+    ItemSeparatorComponent={() => <View style={{ height: 12 }} />}
+  /> */}
+</View>
+
+
     </SafeAreaView>
   );
 };

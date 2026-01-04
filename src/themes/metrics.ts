@@ -74,6 +74,7 @@ const metrics = {
     pL10: { paddingLeft: moderateScale(10) },
     pL12: { paddingLeft: moderateScale(12) },
     pL15: { paddingLeft: moderateScale(15) },
+     pL16: { paddingLeft: moderateScale(16) },
     pL20: { paddingLeft: moderateScale(20) },
     pL25: { paddingLeft: moderateScale(25) },
     pL30: { paddingLeft: moderateScale(30) },
@@ -114,6 +115,7 @@ const metrics = {
     pH10: { paddingHorizontal: moderateScale(10) },
     pH12: { paddingHorizontal: moderateScale(12) },
     pH15: { paddingHorizontal: moderateScale(15) },
+       pH16: { paddingHorizontal: moderateScale(16) },
     pH20: { paddingHorizontal: moderateScale(20) },
     pH25: { paddingHorizontal: moderateScale(25) },
     pH30: { paddingHorizontal: moderateScale(30) },
@@ -127,6 +129,7 @@ const metrics = {
     pV12: { paddingVertical: verticalScale(12) },
     pV10: { paddingVertical: verticalScale(10) },
     pV15: { paddingVertical: verticalScale(15) },
+        pV16: { paddingVertical: verticalScale(16) },
     pV20: { paddingVertical: verticalScale(20) },
     pV25: { paddingVertical: verticalScale(25) },
     pV30: { paddingVertical: verticalScale(30) },
@@ -200,3 +203,12 @@ const metrics = {
 }
 
 export default metrics
+
+//
+// metrics = {
+//   icons: { ... },      // icon sizes
+//   paddings: { ... },   // padding helpers
+//   margins: { ... },    // margin helpers
+//   border: { ... },     // border radius
+//   borderWidth: { ... } // border width
+// }

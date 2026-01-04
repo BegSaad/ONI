@@ -1,6 +1,7 @@
 
 const images:any={
-    badgeface:require('../image/badgeface')
+    face: require('../image/Badgeface.png'),
+    patient:require('../image/patient.png'),
 
 };
 

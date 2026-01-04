@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/fonts/InstrumentSans-Italic-VariableFont_wdth,wght.ttf",
+      "sha1": "23b103f566d6015a089d4c3c954261a3aaf02a52"
+    },
+    {
+      "path": "src/fonts/InstrumentSans-VariableFont_wdth,wght.ttf",
+      "sha1": "bbfe87ea11c3704df8d630627d1b8d3e994c4a76"
+    }
+  ]
+}
